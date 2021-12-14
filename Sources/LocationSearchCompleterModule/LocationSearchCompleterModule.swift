@@ -7,6 +7,7 @@
 
 import MapKit
 
+#if canImport(MapKit) && canImport(UIKit)
 public class AddressSearchCompleter: NSObject, ObservableObject, MKLocalSearchCompleterDelegate {
 
     private let searchCompleter = MKLocalSearchCompleter()
@@ -33,3 +34,4 @@ public class AddressSearchCompleter: NSObject, ObservableObject, MKLocalSearchCo
     }
 
 }
+#endif
