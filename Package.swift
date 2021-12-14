@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "LocationSearchCompleterModule",
+    platforms: [SupportedPlatform.iOS(.v13)],
     products: [
         .library(
             name: "LocationSearchCompleterModule",
